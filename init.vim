@@ -1,4 +1,3 @@
-syntax on 
 
 set tabstop=4
 set softtabstop=4
@@ -18,15 +17,11 @@ set nowrap
 set splitbelow
 set splitright
 set hidden
-set scrolloff=8
 set noshowmode
 set updatetime=250
 set encoding=UTF_8
 set mouse=a
 
-" --- plugins
+source $HOME/.config/nvim/vim-plug/plugins.vim
 
-call plug#begin('~/.config/nvim/plugged')
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-call plug#end()
-
+colorscheme tokyonight
